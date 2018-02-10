@@ -20,7 +20,21 @@
         <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <!-- END HEAD -->
-
+    <style type="text/css">
+        .vid-wrap{  
+            width:100%;background: #000;  
+            position:relative;  
+            padding-bottom:56.25%;    /*需要用padding来维持16:9比例,也就是9除以16*/  
+            height: 0;  
+        }  
+        .vid-wrap video{  
+            position: absolute;  
+            top:0;  
+            left: 0;  
+            width: 100%;  
+            height: 100%  
+        } 
+    </style>
     <!-- BODY -->
     <body id="body" data-spy="scroll" data-target=".header">
 
@@ -52,7 +66,7 @@
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">首页</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#about">关于我</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">工作经验</a></li>
+                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#experience">工项目经验</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">一些小玩意</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">联系我</a></li>
                             </ul>
@@ -222,15 +236,15 @@
             </div>
         </div>
         <!-- End Experience -->
-		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
+		<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >wm110</a></div>
         <!-- Work -->
         <div id="work">
             <div class="container content-lg">
                 <div class="row">
                     <div class="col-sm-3 sm-margin-b-30">
                         <div class="text-right sm-text-left">
-                            <h2 class="margin-b-0">Works</h2>
-                            <p>I build the real value.</p>
+                            <h2 class="margin-b-0">一些小玩意</h2>
+                            <p>力行而后知之真</p>
                         </div>
                     </div>
                     <div class="col-sm-8 col-sm-offset-1">
@@ -251,19 +265,8 @@
                                                 <span>华中电力科技开发有限责任公司</span>
                                             </div>
                                             <div class="row">
-                                                <!--<div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>-->
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                    <div class="vid-wrap">
                                                         <video src="img/smartreport.mp4" controls="controls" width="435px">
                                                         您的浏览器不支持 video 标签。
                                                         </video>
@@ -284,17 +287,17 @@
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x400/01.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/397x400/weixin.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
                                             <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                             <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
+                                                <h3 class="margin-b-5">微信小程序</h3>
+                                                <span>自己做的几个小功能</span>
                                             </div>
                                             <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                <!-- <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
                                                     <div class="margin-t-10 sm-margin-t-0">
                                                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
@@ -311,6 +314,21 @@
                                                         <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
                                                         <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
                                                         <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                    </div>
+                                                </div> -->
+                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
+                                                    <div class="vid-wrap">
+                                                        <video src="img/weixin.mp4" controls="controls" width="435px">
+                                                        您的浏览器不支持 video 标签。
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="margin-t-10 sm-margin-t-0">
+                                                        <p class="margin-b-5">三个小功能：1.头条新闻--调用api接口(参数新闻类型)返回新闻列表，api数据每五分钟分钟更新一次。新闻具体信息是访问原始新闻页面
+                                                        用Jsoup后台解析提取有用的信息返回前台显示。2.豆瓣电影--电影信息的一个查询,
+                                                        访问豆瓣api拿的数据。3.历史上的今天--调用的历史上的今天的api数据接口，用
+                                                        js和wxss做的日历控件实现点击日期查询数据。</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -319,37 +337,31 @@
                                 </div>
                                 <!-- End Work -->
                             </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                            <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/01.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/800x400/redblack.png" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
                                             <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                             <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
+                                                <h3 class="margin-b-5">红与黑</h3>
+                                                <span>仿有货商城</span>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
+                                                    <div class="vid-wrap">
+                                                        <video src="img/redblack.mp4" controls="controls" width="435px">
+                                                        您的浏览器不支持 video 标签。
+                                                        </video>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                        <p class="margin-b-5">该系统主要包含：1.系统管理、2. 模板管理，3. 报表管理三大模块。系统采用SpringMvc+Hibernate实现MVC分层结构，表现层：采用Jquery的Ajax实现了刷新效果以及页面特效；数据层：使用hibernate的对象关系映射完成数据的持久化。系统使用的easyui框架，整体效果简洁美观。报表编辑、展示及修改页面使用的handsontable和ntko控件来展示，使得报表的使用更加简洁方便。</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -358,76 +370,33 @@
                                 </div>
                                 <!-- End Work -->
                             </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-4">
+                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-4">
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/02.jpg" alt="Portfolio Image">
+                                        <img class="full-width img-responsive" src="img/397x400/weixin.jpg" alt="Portfolio Image">
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
                                             <a href="javascript:void(0);" class="work-popup-close">Hide</a>
                                             <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
+                                                <h3 class="margin-b-5">微信小程序</h3>
+                                                <span>自己做的几个小功能</span>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
+                                                    <div class="vid-wrap">
+                                                        <video src="img/weixin.mp4" controls="controls" width="435px">
+                                                        您的浏览器不支持 video 标签。
+                                                        </video>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Work -->
-                            </div>
-                            <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                                <!-- Work -->
-                                <div class="work work-popup-trigger">
-                                    <div class="work-overlay">
-                                        <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image">
-                                    </div>
-                                    <div class="work-popup-overlay">
-                                        <div class="work-popup-content">
-                                            <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                            <div class="margin-b-30">
-                                                <h3 class="margin-b-5">Art Of Coding</h3>
-                                                <span>Clean &amp; Minimalistic Design</span>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                        <ul class="list-inline work-popup-tag">
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Design,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Coding,</a></li>
-                                                            <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Portfolio</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4">
-                                                    <div class="margin-t-10 sm-margin-t-0">
-                                                        <p class="margin-b-5"><strong>Project Leader:</strong> John Doe</p>
-                                                        <p class="margin-b-5"><strong>Designer:</strong> Alisa Keys</p>
-                                                        <p class="margin-b-5"><strong>Developer:</strong> Mark Doe</p>
-                                                        <p class="margin-b-5"><strong>Customer:</strong> Keenthemes</p>
+                                                        <p class="margin-b-5">三个小功能：1.头条新闻--调用api接口(参数新闻类型)返回新闻列表，api数据每五分钟分钟更新一次。新闻具体信息是访问原始新闻页面
+                                                        用Jsoup后台解析提取有用的信息返回前台显示。2.豆瓣电影--电影信息的一个查询,
+                                                        访问豆瓣api拿的数据。3.历史上的今天--调用的历史上的今天的api数据接口，用
+                                                        js和wxss做的日历控件实现点击日期查询数据。</p>
                                                     </div>
                                                 </div>
                                             </div>
